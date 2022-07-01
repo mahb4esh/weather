@@ -24,7 +24,7 @@ weatherForm.addEventListener('submit', (e) => {
 
                 console.log(data)
                 messageOne.textContent = data.location
-                const msg2 = data.weather + '. ' + 'Temp is ' + ' '+ data.cur_temp + ' ' + 'Feels like ' + data.feel_temp
+                const msg2 = data.weather + '. ' + 'Temp is ' + ' '+ data.cur_temp + ' ' + 'Feels like ' + data.feel_temp + ' Precepetation is ' + data.precip + ' Is day is ' +  data.is_day
                 messageTwo.textContent = msg2
 
             }

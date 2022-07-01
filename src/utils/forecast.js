@@ -15,10 +15,16 @@ const forecast = (latitude, longitude, callback) => {
             weather = body.current.weather_descriptions[0] 
             cur_temp = body.current.temperature 
             feel_temp = body.current.feelslike
+            is_day = body.current.is_day
+            precip = body.current.precip
+            console.log(is_day)
+            console.log(precip)
             callback(undefined, {
                 'Weather' : weather,
                 'cur_temp' : cur_temp,
-                'feel_temp' : feel_temp
+                'feel_temp' : feel_temp,
+                'precip' : precip,
+                'is_day' : is_day
             })
         }
     }

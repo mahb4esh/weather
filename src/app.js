@@ -60,7 +60,9 @@ app.get('/weather', (req, res) => {
                 weather: weather,
                 cur_temp: cur_temp,
                 feel_temp: feel_temp,
-                location: req.query.search
+                location: req.query.search,
+                precip: precip,
+                is_day: is_day
             })
         })
     })
